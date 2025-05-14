@@ -420,3 +420,55 @@ const observer9 = new IntersectionObserver(entries => {
 }, { threshold: 1 });
 
 observer9.observe(bottomSocials);
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Scroll tracking
+  window.addEventListener('scroll', () => {
+    gtag('event', 'scroll', {
+      'event_category': 'engagement',
+      'event_label': 'User scrolled the page'
+    });
+  });
+
+  // Contact form submission
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function () {
+      gtag('event', 'submit_form', {
+        'event_category': 'contact',
+        'event_label': 'Contact form submitted'
+      });
+    });
+  }
+
+  // Social link clicks
+  document.querySelectorAll('.socials a').forEach(link => {
+    link.addEventListener('click', function () {
+      gtag('event', 'click', {
+        'event_category': 'social',
+        'event_label': this.href
+      });
+    });
+  });
+
+  // Certificate clicks
+  document.querySelectorAll('.certificate a').forEach(link => {
+    link.addEventListener('click', function () {
+      gtag('event', 'click_certificate', {
+        'event_category': 'certificates',
+        'event_label': this.href
+      });
+    });
+  });
+
+  // Resume download
+  const resumeLink = document.querySelector('.resume a');
+  if (resumeLink) {
+    resumeLink.addEventListener('click', function () {
+      gtag('event', 'download_resume', {
+        'event_category': 'resume',
+        'event_label': 'Resume downloaded'
+      });
+    });
+  }
+});
