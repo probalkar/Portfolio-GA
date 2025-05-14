@@ -424,9 +424,10 @@ observer9.observe(bottomSocials);
 document.addEventListener('DOMContentLoaded', function () {
   // Scroll tracking
   window.addEventListener('scroll', () => {
-    gtag('event', 'scroll', {
+    gtag('event', 'page_scrolled', {
       'event_category': 'engagement',
-      'event_label': 'User scrolled the page'
+      'event_label': 'User scrolled the page',
+      'interaction_type': 'scroll'
     });
   });
 
@@ -434,9 +435,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function () {
-      gtag('event', 'submit_form', {
-        'event_category': 'contact',
-        'event_label': 'Contact form submitted'
+      gtag('event', 'contact_form_submitted', {
+        'event_category': 'form',
+        'event_label': 'Contact form submitted',
+        'form_id': 'contact-form'
       });
     });
   }
@@ -444,9 +446,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Social link clicks
   document.querySelectorAll('.socials a').forEach(link => {
     link.addEventListener('click', function () {
-      gtag('event', 'click', {
+      gtag('event', 'social_link_clicked', {
         'event_category': 'social',
-        'event_label': this.href
+        'event_label': this.href,
+        'platform': this.href.includes('instagram') ? 'Instagram' :
+                    this.href.includes('linkedin') ? 'LinkedIn' :
+                    this.href.includes('github') ? 'GitHub' : 'Other'
       });
     });
   });
@@ -454,9 +459,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Certificate clicks
   document.querySelectorAll('.certificate a').forEach(link => {
     link.addEventListener('click', function () {
-      gtag('event', 'click_certificate', {
+      gtag('event', 'certificate_viewed', {
         'event_category': 'certificates',
-        'event_label': this.href
+        'event_label': this.href,
+        'certificate_name': this.querySelector('img')?.alt || 'Unknown Certificate'
       });
     });
   });
@@ -465,9 +471,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const resumeLink = document.querySelector('.resume a');
   if (resumeLink) {
     resumeLink.addEventListener('click', function () {
-      gtag('event', 'download_resume', {
+      gtag('event', 'resume_downloaded', {
         'event_category': 'resume',
-        'event_label': 'Resume downloaded'
+        'event_label': 'Resume downloaded',
+        'file_name': this.getAttribute('download') || 'resume.pdf'
       });
     });
   }
