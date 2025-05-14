@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Probal's Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MB701SCFH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-3MB701SCFH');
+    </script>
+  </head>
+  
+  <body>
+    <div class="headline-container">
+      <div id="text-behind">MYSELF<br />PROBAL KAR</div>
+      <div id="text-behind-blur">MYSELF<br />PROBAL KAR</div>
+      <div id="text-front">MYSELF<br />PROBAL KAR</div>
+    </div>
+
+    <!-- Particle container -->
+    <div id="particles-js"></div>
+
+    <div class="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <!-- Additional code that you can ignore -->
+
+    <div class="text-container">
+      <div class="title">Welcome to my Portfolio</div>
+
+      <div class="socials">
+        <a href="https://instagram.com/prbl.kr" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://linkedin.com/in/probalkar" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://github.com/probalkar" target="_blank">
+          <svg
+            width="30"
+            height="30"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 98 96"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="more-content">
+        <!-- Add this section after the existing content -->
+      <div class="about-section">
+        <div class="about-content">
+          <h1>ABOUT ME 🙋🏻‍♂️</h1>
+          <span>
+            I am a 3rd Year B. Tech. student in the field of Artificial
+            Intelligence and Machine Learning from G. H. Raisoni College of
+            Engineering and Management, Pune.
+            <br /><br />
+            Since a very young age, I've been into technology. My journey in
+            programming started when I was in 8th standard, when I first started
+            to code using HTML. Fast forward to 11th standard, I got introduced
+            to Python. Since then, Python has been my jam.
+            <br /><br />
+            Ever since I've stepped into my college, I've always been into
+            Machine Learning. I was always curios to know how these things are
+            achieved where a machine is able to understand us and respond
+            accordingly. That curiosity led me to dive into Machine Learning.
+          </span>
+        </div>
+      </div>
+
+      <!-- Add the education section after the about section -->
+
+      <div class="education-section">
+        <div class="container">
+          <h1 class="section-heading">Education 📖</h1>
+          <ul>
+            <li>
+              <strong
+                >🎓 G. H. Raisoni College of Engineering and Management,
+                Pune</strong
+              >
+              <br />
+              <span class="education-details">
+                Bachelor of Technology (B.Tech) in Computer Science and
+                Engineering (Artifical Intelligence & Machine Learning)</span
+              >
+              <br />
+              <span class="education-details">Year: 2021 - 2025</span>
+              <br />
+              <span class="education-details">Score: 9.39 CGPA [Current]</span>
+            </li>
+            <!-- Add additional education entries as needed -->
+            <li>
+              <strong>🏫 Kendriya Vidyalaya No. 1, Devlali</strong>
+              <br />
+              <span class="education-details"> CBSE 12th Science</span>
+              <br />
+              <span class="education-details">Year: 2020 - 2021</span>
+              <br />
+              <span class="education-details">Score: 88.4%</span>
+            </li>
+            <li>
+              <strong>🏫 Kendriya Vidyalaya No. 1, Devlali</strong>
+              <br />
+              <span class="education-details"> CBSE 10th Board</span>
+              <br />
+              <span class="education-details">Year: 2018 - 2019</span>
+              <br />
+              <span class="education-details">Score: 92.8%</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Add the certificates section with a grid layout -->
+
+      <!-- Update the certificates section with a div wrapper -->
+
+      <div class="certificates-section fade-in">
+        <h1>CERTIFICATES 📜</h1>
+        <div class="certificate-wrapper">
+          <div class="certificate">
+            <a href="https://graduation.udacity.com/confirm/e/e5c6295c-0ae7-11ee-a290-5f870709dfac" target="_blank">
+              <img src="Certificates\Udacity Scholarship Sertificate.jpg" target="_blank" alt="AI Programming with Python Nanodegree [Udacity]"></img>
+            </a>
+            <p>AI Programming with Python Nanodegree<br>[Udacity]</p>
+          </div>
+          <div class="certificate">
+            <a href="https://www.coursera.org/account/accomplishments/specialization/RYV9Q9FZ59VH" target="_blank">
+              <img src="Certificates\Coursera Machine Learning Specialization Completion Certificate.jpg" target="_blank" alt="Machine Learning Specialization [Coursera]"></img>
+            </a>
+            <p>Machine Learning Specialization<br>[Coursera]</p>
+          </div>
+          <div class="certificate">
+            <a href="https://www.coursera.org/account/accomplishments/verify/LZH2HYHANVEP" target="_blank">
+              <img src="Certificates\Coursera Supervised Machine Learning Certificate.jpg" target="_blank" alt="Supervised Machine Learning: Regression and Classification [Coursera]"></img>
+            </a>
+            <p>Supervised Machine Learning: Regression and Classification<br>[Coursera]</p>
+          </div>
+          <div class="certificate">
+            <a href="https://www.coursera.org/account/accomplishments/verify/YUENUVVXYCU5" target="_blank">
+              <img src="Certificates\Coursera Advanced Learning Algorithms Certificate.jpg" target="_blank" alt="Advanced Learning Algorithms [Coursera]"></img>
+            </a>
+            <p>Advanced Learning Algorithms<br>[Coursera]</p>
+          </div>
+          <div class="certificate">
+            <a href="https://www.coursera.org/account/accomplishments/verify/HGR5LR5ELA49" target="_blank">
+              <img src="Certificates\Coursera Unsupervised Learning Course Certificate.jpg" target="_blank" alt="Unsupervised Learning, Recommenders, Reinforcement Learning [Coursera]"></img>
+            </a>
+            <p>Unsupervised Learning, Recommenders, Reinforcement Learning<br>[Coursera]</p>
+          </div>
+          <div class="certificate">
+            <a href="https://skillsacademy.iitm.ac.in/iitprogram/pages/certificate/8H6i3749601Q41321v.pdf" target="_blank">
+              <img src="Certificates\IITM Python Certificate.jpg" target="_blank" alt="IIT Madras Python Course [Guvi]"></img>
+            </a>
+            <p>IIT Madras Python Course<br>[Guvi]</p>
+          </div>
+          <div class="certificate">
+            <a href="https://media.geeksforgeeks.org/courses/certificates/7b379361c677945a7ce66b6c9d4853f0.pdf" target="_blank">
+              <img src="Certificates\GFG Python-DSA Completion Certificate.jpg" target="_blank" alt="DSA in Python [Geeks for Geeks]"></img>
+            </a>
+            <p>DSA in Python<br>[Geeks for Geeks]</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="skills-section fade-in">
+        <h1>Skills 🎯</h1>
+
+        <!-- List of Skills -->
+        <ul>
+          <li>⚙️<b>Technical Skills:</b> Machine Learning, Deep Learning, Web Development, Prompt Engineering</li>
+          <br>
+          <li>🛠️<b>Tools:</b> Python (Pandas, Numpy, Tensorflow, OpenCV, Scikit-Learn), Streamlit, NVIDIA CUDA, HTML, CSS, JavaScript</li>
+          <br>
+          <li>👔<b>Soft Skills:</b> Time Management, Team Management, Creative Writing, Communication, Good Sense of Humor</li>
+          <br>
+          <li>🗣️<b>Languages:</b> English (Professional Proficiency), Hindi (Native/Bilingual Proficiency), Bengali (Native/Bilingual Proficiency), Marathi (Elementary Proficiency), German (Elementary Proficiency)</li>
+          <br>
+          <li>😁<b>Interests:</b> Technology, Listening Music, Reading, Travelling, Gaming, Movies, Hangout, Comedy, Memes</li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </div>
+
+      <!-- Work Experience Section -->
+      <div class="work-experience fade-in">
+        <h1>WORK EXPERIENCE 👨🏻‍💻</h1>
+        <div class="work-content">
+          <!-- Job 1 -->
+          <div class="job">
+            <h2>Artificial Intelligence Intern</h2>
+            <p class="company">Code Clause</p>
+            <span class="date">July 2023 - August 2023</span>
+            <ol class="description">
+              <li>
+                <b>Object Detection System:</b>
+                <span>Created a system that accurately identifies and locates objects in various settings.</span>
+                <a href="https://github.com/probalkar/CodeClause_Object_Detection_System.git" target="_blank"><span>🔗Link to Repo</span></a>
+              </li>
+              <li>
+                <b>Animal Species Prediction System:</b>
+                <span>Developed a system to predict animal species, contributing to wildlife understanding and conservation.</span>
+                <a href="https://github.com/probalkar/CodeClause_Animal_Species_Prediction.git" target="_blank"><span>🔗Link to Repo</span></a>
+              </li>
+              <li>
+                <b>Blindness Detection/Diabetic Retinopathy System:</b>
+                <span>Implemented a system to detect signs of blindness, particularly focusing on diabetic retinopathy for early intervention.</span><br>
+                <a href="https://github.com/probalkar/CodeClause_Blindness_Detection.git" target="_blank"><span>🔗Link to Repo</span></a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Add more job entries as needed -->
+      </div>
+
+      <div class="organizations fade-in">
+        <h1>ORGANIZATIONS 🏢</h1>
+        <div class="organizations-content">
+          <!-- Organization 1 -->
+          <div class="organization">
+            <h2>Google Developers Student Club (GDSC), GHRCEM</h2>
+            <span class="position">Technical Team Co-Lead</span>
+            <br><br>
+            <span class="date">August 2023 - Present</span>
+            <br><br>
+            <span class="description">
+              As the Technical Team Co-Lead at GDSC GH Raisoni College of Engineering and Management, I play a pivotal role in leading and coordinating technical initiatives within the community. Collaborating with a dynamic team, my responsibilities include organizing technical workshops, facilitating skill-building sessions, and fostering a collaborative environment for innovative projects while also learning and practicing new and emerging technologies myself simultaneously. Together, we strive to enhance technical proficiency, promote learning, and contribute to the vibrant tech community at our institution.
+            </span>
+          </div>
+
+          <br><br><br><br>
+
+          <!-- Organization 2 -->
+          <div class="organization">
+            <h2>Artifical Intelligence & Coding Club (AICC), GHRCEM</h2>
+            <span class="position">Technical Team Member</span>
+            <br><br>
+            <span class="date">September 2022 - February 2023</span>
+            <br><br>
+            <span class="description">
+              As a Technical Team Member in the AI and Coding Club (AICC), I actively contributed to the club's mission of fostering a passion for artificial intelligence and coding among students. Collaborating with like-minded peers, I participated in coding competitions, organized technical workshops, and engaged in projects that explored the applications of AI. My role allowed me to not only enhance my technical skills but also share knowledge and inspire fellow students to explore the exciting realms of AI and coding.
+            </span>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="projects fade-in">
+        <h1>PROJECTS 🏗️</h1>
+        <div class="projects-content">
+          <!-- Project 1 -->
+          <div class="project">
+            <h2>😷Real-Time Face Mask Detection System</h2>
+            <span class="date">September 2023 - October 2023</span><br>
+            <a href="https://github.com/probalkar/Real-Time-Face-Mask-Detection.git" target="_blank"><span>🔗Link to Repo</span></a>
+            <br><br>
+            <span class="description">
+              <span>
+                Created a real-time face mask detection system using OpenCV, Tensorflow, Streamlit, and DeepFace to detect whether a person is wearing a mask or not. Additionally, it also estimates the person's age and gender for better demographic analysis of the people who do or do not prefer to wear masks.
+                <br><br>
+                Used MobileNetV2 pre-trained model for detection, labels from imagenet dataset, and Haar Cascade classifier for classification.
+              </span> 
+            </span>
+          </div>
+
+          <br><br><br><br>
+
+          <!-- Project 2 -->
+          <div class="project">
+            <h2>💻Laptop Screen Auto-Brightness System</h2>
+            <span class="date">November 2023 - November 2023</span><br>
+            <a href="https://github.com/probalkar/Windows-Auto-brightness.git" target="_blank"><span>🔗Link to Repo</span></a>
+            <br><br>
+            <span class="description">
+              <span>
+                Created an auto-brightness system for Windows computers using Python.
+                <br>
+                Technologies used:
+              </span>
+              <ul>
+                <li>
+                  <b>opencv-python:</b><span> OpenCV is the backbone of the project, enabling me to capture webcam frames and perform sophisticated image processing, crucial for accurate light analysis.</span>
+                </li>
+                <li>
+                  <b>screen-brightness-control:</b><span> This library enables the project to dynamically adjust the screen brightness based on the calculated ambient light conditions, ensuring a seamless viewing experience in different lighting environments.</span> 
+                </li>
+                <li>
+                  <b>pygetwindows:</b><span> PyGetWindow played a significant role in interacting with windows and screen properties. It provided the necessary functionality to access window properties, a crucial step in ensuring the seamless adjustment of screen brightness.</span>
+                </li>
+                <li>
+                  <b>pyinstaller:</b><span> PyInstaller was instrumental in converting my Python script into a standalone executable. This allows the application to run independently without requiring users to install Python or any additional dependencies.</span>
+                </li>
+              </ul>
+            </span>
+          </div>
+
+          <br><br><br><br>
+
+          <!-- Project 3 -->
+          <div class="project">
+            <h2>Rock✊🏻-Paper✋🏻-Scissors✌🏻 Using Hand Gestures</h2>
+            <span class="date">November 2023 - November 2023</span><br>
+            <a href="https://github.com/probalkar/Rock-Paper-Scissor-using-Hand-Gesture.git" target="_blank"><span>🔗Link to Repo</span></a>
+            <br><br>
+            <span class="description">
+              <span>
+                This project introduces an interactive Rock, Paper, Scissors game where users play against a computer opponent. Implemented in Python, the game leverages OpenCV and Mediapipe for hand gesture tracking through the webcam. The computer opponent's moves are randomly generated using the Random module. The user interface is enhanced with CVZone, creating a visually appealing and straightforward experience. Real-time feedback on round outcomes is provided with the Time module, offering a seamless gaming encounter. The project combines classic gameplay with modern technology for an engaging user experience.
+              </span>  
+            </span>
+          </div>
+
+          <br><br><br><br>
+
+          <!-- Project 4 -->
+          <div class="project">
+            <h2>🌐 Personal Portfolio Site</h2>
+            <span class="date">November 2023 - November 2023</span><br>
+            <a href="https://github.com/probalkar/My-Portfolio.git" target="_blank"><span>🔗Link to Repo</span></a>
+            <br><br>
+            <span class="description">
+              <span>
+                Embarking on this portfolio journey, I curated a digital space that goes beyond the ordinary. Here's a quick dive into the creation process:
+              </span>
+              <ol>
+                <li>
+                  <b>Design Vision:</b><span> Envisioned a sleek and immersive digital portfolio, meticulously planning sections for a comprehensive representation.</span>
+                </li>
+                <li>
+                  <b>Code Mastery:</b><span> Implemented the design using HTML and CSS, ensuring a polished and professional layout.</span> 
+                </li>
+                <li>
+                  <b>Dynamic Elements:</b><span> Incorporated dynamic parallax effects with JavaScript and Three.js for a visually engaging experience.</span>
+                </li>
+                <li>
+                  <b>Interactive Touches:</b><span> Added scroll animations, timed fade-ins, and customized scrollbars for a seamless and delightful user journey.</span>
+                </li>
+              </ol>  
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hobbies fade-in">
+        <h1>HOBBIES 🪇</h1>
+        <div class="hobbies-content">
+          <h2>My hobbies include:</h2>
+          <ul>
+            <li>🎒Travelling to new places</li>
+            <li>🎧Listening music</li>
+            <li>🎮Playing games</li>
+            <li>🍿Watching movies</li>
+            <li>📖Reading books</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="youtube-video fade-in">
+        <h2>Check Out My Video 🎥</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/z_g6dxJUw34?si=IcLmdqJnXwLu3g02"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="contact-me fade-in">
+        <h2>Contact Me 📩</h2>
+        <form id="contact-form">
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="name" required placeholder="Name"/>
+          <br />
+          <!-- <label for="email">Email:</label> -->
+          <input type="email" id="email" name="email" required placeholder="Email"/>
+          <br />
+          <!-- <label for="message">Message:</label> -->
+          <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
+          <br />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="bottom-socials fade-in">
+        <h2>My Socials</h2>
+        <a href="https://instagram.com/prbl.kr" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://linkedin.com/in/probalkar" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://github.com/probalkar" target="_blank">
+          <svg
+            width="50"
+            height="50"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 98 96"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <div class="resume">
+          <a href="Probal's Resume.pdf" download="Probal's Resume">Download My Resume</a>
+        </div>
+      </div>
+
+      <div class="footer">
+        &copy; 2023 Probal Kar. All rights reserved.
+      </div>
+      </div>
+
+    </div>
+    <!-- partial -->
+    <script type="module" src="./script.js"></script>
+    <!-- Include particles.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </body>
+</html>
