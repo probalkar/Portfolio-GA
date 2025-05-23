@@ -423,13 +423,13 @@ observer9.observe(bottomSocials);
 
 document.addEventListener('DOMContentLoaded', function () {
   // Scroll tracking
-  window.addEventListener('scroll', () => {
-    gtag('event', 'page_scrolled', {
-      'event_category': 'engagement',
-      'event_label': 'User scrolled the page',
-      'interaction_type': 'scroll'
-    });
-  });
+  // window.addEventListener('scroll', () => {
+  //   gtag('event', 'page_scrolled', {
+  //     'event_category': 'engagement',
+  //     'event_label': 'User scrolled the page',
+  //     'interaction_type': 'scroll'
+  //   });
+  // });
 
   // Contact form submission
   const contactForm = document.getElementById('contact-form');
