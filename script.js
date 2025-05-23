@@ -479,11 +479,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-document.getElementById('custom-link').addEventListener('click', function() {
-	dataLayer.push({
-		event: 'custom_link_click',
-		link_text: 'Download',
-		link_url: 'https://linkedin.com/in/probalkar'
-	});
-});
